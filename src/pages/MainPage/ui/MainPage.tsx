@@ -21,9 +21,6 @@ export function MainPage() {
         <FileUploaderSection />
        
       </main>
-      {/* <Button>Click</Button>
-      <img src={headerImgWebp} alt=""/>
-      */}
     </>
   );
 }
