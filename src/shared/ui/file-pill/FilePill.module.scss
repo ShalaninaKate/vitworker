@@ -1,0 +1,33 @@
+@use "@shared/styles/index" as m;
+
+.filePill {
+  padding: m.toRem(7) m.toRem(10);
+  display: inline-flex;
+  align-items: center;
+  gap: m.toRem(4);
+  background: #f3f3f3;
+  border-radius: 50px;
+  transition: background 0.3s ease 0s;
+  @media (any-hover: hover){
+    &:hover{
+       background: #e3e2e2;
+    }
+  }
+
+  &__text {
+    font-size: m.toRem(16);
+    font-weight: 500;
+    color: #000;
+    line-height: 1;
+  }
+  &__remove-btn {
+    padding-top: m.toRem(2);
+    width: m.toRem(16);
+    height: m.toRem(16);
+  }
+  &__remove-btn-icon {
+    fill: #000;
+    width: 100%;
+    height:100%;
+  }
+}

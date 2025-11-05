@@ -1,0 +1,31 @@
+@use "@shared/styles/index" as m;
+
+.header {
+  background: url("@/shared/assets/img/header.png") center / cover no-repeat;
+
+  // .header__container
+
+  &__container {
+      padding-top: clamp(m.toRem(40), 6vw, m.toRem(60));
+      padding-bottom: clamp(m.toRem(40), 6vw, m.toRem(60));
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--second-family);
+    gap: m.toRem(20);
+    color: var(--white);
+    font-size: clamp(m.toRem(35), 8vw, m.toRem(60));
+    font-weight: 700;
+    line-height: 90%;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 26%;
+      background: var(--color-primary);
+      height: m.toRem(2);
+    }
+  }
+}
