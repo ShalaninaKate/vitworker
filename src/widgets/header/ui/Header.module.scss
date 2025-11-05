@@ -6,23 +6,8 @@
   // .header__container
 
   &__container {
-    padding-top: m.toRem(60);
-
-    padding-bottom: m.toRem(60);
-    height: m.toRem(200);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: m.toRem(7) m.toRem(20);
-
-    @media (max-width: m.toEm(992)) {
-      padding-top: m.toRem(15);
-      padding-bottom: m.toRem(15);
-      gap: m.toRem(7) m.toRem(15);
-    }
-    @media (max-width: m.toEm(640)) {
-      gap: m.toRem(7) m.toRem(10);
-    }
+      padding-top: clamp(m.toRem(40), 6vw, m.toRem(60));
+      padding-bottom: clamp(m.toRem(40), 6vw, m.toRem(60));
   }
 
   &__title {

@@ -2,6 +2,7 @@
 
 .description {
   padding-top: m.toRem(48);
+  padding-top: clamp(m.toRem(38), 6vw, m.toRem(48));
   padding-bottom: m.toRem(15);
 
   &__container {
