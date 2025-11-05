@@ -1,0 +1,3 @@
+
+
+export { SvgIcon } from './SvgIcon';

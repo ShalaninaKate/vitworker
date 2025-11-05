@@ -1,0 +1,14 @@
+:root {
+  --font-family: 'Palanquin', sans-serif;
+  --second-family: 'PalanquiDark', sans-serif;
+  --content-width: 790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --color-neutral-primary: #616161;
+  --white: #fff;
+  --color-primary: #0063ae;
+  --color-primary-hover: #025798;
+
+}
+
+

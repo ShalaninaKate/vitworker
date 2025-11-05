@@ -1,0 +1,43 @@
+@use '@shared/styles/index' as m;
+
+body {
+  background: var(--white);
+
+  &._lock {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+
+  @media (max-width: m.toEm(640)) {
+    &.no-scroll {
+      overflow: hidden;
+      touch-action: none;
+      overscroll-behavior: none;
+    }
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @supports (overflow: clip) {
+    overflow: clip;
+  }
+
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+[class*='__container'] {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+  width: 100%;
+}
+

@@ -1,0 +1,44 @@
+@use "@shared/styles/index" as m;
+
+
+.button {
+ 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--color-primary);
+  font-size: m.toRem(14);
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--color-primary-hover);
+    }
+  }
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid #0063ae;
+
+    transition: background 0.3s ease, color 0.3s ease;
+    color: var(--color-primary);
+    @media (any-hover: hover){
+      &:hover{
+         color: var(--white);
+      }
+    }
+  }
+
+  // &:focus-visible {
+  //   outline: 2px solid var(--green-transition);
+  // }
+
+  &:active {
+    outline: none;
+  }
+
+
+}

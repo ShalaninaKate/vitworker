@@ -1,0 +1,39 @@
+@use "@shared/styles/index" as m;
+
+.description {
+  padding-top: m.toRem(48);
+  padding-bottom: m.toRem(15);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: m.toRem(14);
+    }
+    display: flex;
+    flex-direction: column;
+    font-family: var(--second-family);
+    gap: m.toRem(10);
+    color: var(--color-primary);
+
+    font-size: clamp(m.toRem(20), 5vw, m.toRem(30));
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      width: 26%;
+      background: #d8dbd5;
+      height: m.toRem(4);
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: m.toRem(16);
+    line-height: 130%;
+  }
+}

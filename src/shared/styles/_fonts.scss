@@ -1,0 +1,4 @@
+@use './mixins/font-face' as m;
+
+@include m.font-face("Palanquin", "/fonts/Palanquin-Medium", 500, normal);
+@include m.font-face("PalanquiDark", "/fonts/PalanquiDark-Bold", 700, normal);
